@@ -1,0 +1,13 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Google AI Studio temporary artifacts and generated screenshots
+.aistudio/
+tests/browser/fake-camera.y4m
+tests/browser/fake-camera.json

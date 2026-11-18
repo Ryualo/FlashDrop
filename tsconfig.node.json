@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["node"],
+    "strict": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["vite.config.ts", "scripts/**/*.ts", "src/**/*.test.ts", "src/engine/**/*.ts", "src/utils/**/*.ts", "src/storage/**/*.ts"],
+  "exclude": ["src/engine/scanSession.ts", "dist", "node_modules"]
+}

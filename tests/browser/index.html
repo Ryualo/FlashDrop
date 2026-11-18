@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>DropFlash browser integration tests</title>
+  </head>
+  <body style="font-family: system-ui; background: #111; color: #eee">
+    <h1>DropFlash browser integration tests</h1>
+    <p>Writes up to 64 MB to this origin's OPFS/IndexedDB (removed afterwards).</p>
+    <button id="run" type="button">Run tests</button>
+    <video id="v" playsinline muted style="width: 320px; display: block; margin-top: 1rem"></video>
+    <pre id="out"></pre>
+    <script type="module" src="./run.js"></script>
+  </body>
+</html>

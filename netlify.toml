@@ -1,0 +1,14 @@
+# Netlify: static Vite build. Headers live in public/_headers (copied into dist/).
+[build]
+  command = "npm run check"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NPM_FLAGS = "--no-audit --no-fund"
+
+# Single-page app: unknown paths serve the app shell (views use #hash routes).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
